@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/grad_bg"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+    <TextView
+        android:id="@+id/nameOfApp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo_tamma"
+        android:text="Let's Share!"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        />
+    <TextView
+        android:id="@+id/descriptionOfApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameOfApp"
+        android:fontFamily="@font/pacifico"
+        android:text=" a simple app to share files"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_centerInParent="true"
+
+        />
+
+    </RelativeLayout>
+</RelativeLayout>

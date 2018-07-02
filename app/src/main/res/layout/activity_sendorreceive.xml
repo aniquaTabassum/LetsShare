@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout">
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="383dp"
+        android:layout_height="50dp"
+        android:background="@color/gradientStart"
+        android:text="Let's Share"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:fontFamily="@font/baloo_tamma"/>
+
+    <ListView
+        android:id="@+id/peerListView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/discoveryState"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        />
+
+    <LinearLayout
+        android:layout_below="@id/peerListView"
+        android:layout_width="383dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:weightSum="300"
+        android:layout_marginVertical="20dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="25"></LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="99">
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="110dp"
+            android:layout_height="90dp"
+            android:background="@color/gradientStart"
+            android:src="@drawable/sent"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+                   />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="50"></LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="101">
+        <ImageButton
+            android:id="@+id/receiveButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gradientStart"
+            android:src="@drawable/received"
+            android:scaleType="fitCenter"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/discoveryState"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="90dp" />
+
+</RelativeLayout>
